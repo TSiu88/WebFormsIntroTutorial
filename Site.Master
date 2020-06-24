@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebFormsIntroTutorial.SiteMaster" %>
-<%--Centralized file to manage header, footer, and body all in once place--%>
+<%--Centralized file to manage header, footer, and body all in once place as a template for all pages--%>
 
 <!DOCTYPE html>
 
@@ -66,7 +66,7 @@
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                <%--Where content is put into page--%>
+                <%--Where content is put into pages, all pages wrapped in master--%>
             </asp:ContentPlaceHolder>
             <hr />
             <footer>

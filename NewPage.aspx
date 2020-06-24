@@ -20,7 +20,9 @@
         <asp:Repeater ID="rptEvents" runat="server">
             <%--A Repeater dynamically writes out an item for each item in list of data using a template--%>
             <%--Templates available: header, footer, item, alternating, and separator--%>
-
+            <ItemTemplate>
+                <h3><%# DataBinder.Eval(Container.DataItem, "EventDate") %><small><%# DataBinder.Eval(Container.DataItem, "EventName")  %></small></h3>
+            </ItemTemplate>
         </asp:Repeater>
     </div>
 </asp:Content>
@@ -33,7 +35,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            
+            Info from code behind added here
         </div>
     </form>
 </body>
