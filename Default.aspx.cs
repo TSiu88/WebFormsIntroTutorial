@@ -20,5 +20,10 @@ namespace WebFormsIntroTutorial
             // Run by right clicking project name > View > Run in browser
             Response.Redirect("~/Contact");
         }
+
+        protected void btnNewPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/NewPage");
+        }
     }
 }

@@ -5,6 +5,9 @@
     <asp:Button ID="btnRedirect" runat="server" OnClick="btnRedirect_Click" Text="Redirect to Contact Page" />
     <%--Created a button with tutorial video 1, runat="server" required for server control --%>
     <%--OnClick=create new event automatically names and creates event method in code behind--%>
+    <asp:Button ID="btnNewPage" runat="server" OnClick="btnNewPage_Click" Text="Redirect to New Page" />
+    <%--Attempt to connect new page to web site--%>
+
     <div class="jumbotron">
         <h1>ASP.NET</h1>
         <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
