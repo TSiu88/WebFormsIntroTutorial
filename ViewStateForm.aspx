@@ -20,4 +20,7 @@
     <div class="form-group">
         <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
     </div>
+    <div>
+        <asp:Literal ID="ltSubmit" runat="server"></asp:Literal>
+    </div>
 </asp:Content>
