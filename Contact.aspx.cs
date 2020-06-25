@@ -19,9 +19,17 @@ namespace WebFormsIntroTutorial
         {
             // Takes info from form textbox and ddl and adds it to literal message
             // If form left blank and button clicked, can make it not show message with Validation
-            string message = string.Format("Your name is {0}, email is {1}, age is {2} and your color is {3}",
-                txtName.Text, txtEmail.Text, txtAge.Text, ddlColor.SelectedValue);
-            ltMessage.Text = message;
+            // Also can have a Page.IsValid check since if user disables javascript it's not guaranteed page is valid, this is a server side validation check
+            if(Page.IsValid)
+            {
+                string message = string.Format("Your name is {0}, email is {1}, age is {2} and your color is {3}, with price as ${4}", txtName.Text, txtEmail.Text, txtAge.Text, ddlColor.SelectedValue, txtPrice.Text);
+                ltMessage.Text = message;
+            }
+            else
+            {
+                valSummaryForm.Visible = true;
+            }
+            
         }
     }
 }
