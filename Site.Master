@@ -56,8 +56,9 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/NewPage">New Page</a></li>
-                        <%--Link added to create and be able to navigate to a new page--%>
+                        <li><a runat="server" href="~/NewPage">New Page Events</a></li>
+                        <li><a runat="server" href="~/CustomCalculation">Custom Calculation</a></li>
+                        <%--Link added to create and be able to navigate to a new page, must have exact same name in class?--%>
                     </ul>
                     <%--Tutorial had LoginView here that had Anonymous Template and LoggedInTemplate to show different depending if logged in--%>
                     <%--Has LoginStatus control with event for on logging out to sign out--%>
