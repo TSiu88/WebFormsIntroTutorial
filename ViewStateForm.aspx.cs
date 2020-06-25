@@ -30,7 +30,18 @@ namespace WebFormsIntroTutorial
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            ltSubmit.Text = string.Format("Submitted with {0} and {1}", txtName.Text, ddlState.Text);
+            string message = string.Empty;
+            // try catch for error handling
+            //try
+            //{
+                decimal expectedDecimal = decimal.Parse(txtDecimal.Text);
+                message = string.Format("Submitted with {0} and {1}, with decimal {2}", txtName.Text, ddlState.Text, expectedDecimal);
+            //}
+            //catch(Exception ex)
+            //{
+            //    message = "Expected decimal is not a decimal: " + ex.Message;
+            //}
+            ltSubmit.Text = message;
         }
     }
 }

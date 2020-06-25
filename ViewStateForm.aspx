@@ -8,6 +8,11 @@
         <label>Name</label>
         <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
     </div>
+    <div>
+        <label>Expect decimal (no validation)</label>
+        <asp:TextBox ID="txtDecimal" runat="server"></asp:TextBox>
+        <%--This is to check error handling if no validation is run on server or client side--%>
+    </div>
     <div class="form-group">
         <label>State</label>
         <asp:DropDownList ID="ddlState" runat="server">
